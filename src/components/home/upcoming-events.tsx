@@ -1,6 +1,5 @@
 import { CalendarOutlined } from '@ant-design/icons'
 import { Badge, Card, List } from 'antd'
-import React, { useState } from 'react'
 import { Text } from '../text'
 import UpcomingEventsSkeleton from '../skeleton/upcoming-events'
 import { getDate } from '@/utils/helpers'
@@ -10,8 +9,7 @@ import dayjs from 'dayjs'
 
 const UpcomingEvents = () => {
 
-    const [isLoading, setIsLoading] = useState(false);
-    const {data, isLoading: eventsLoading} = useList({
+    const {data, isLoading} = useList({
         resource: 'events',
         pagination: {pageSize: 5},
         sorters: [

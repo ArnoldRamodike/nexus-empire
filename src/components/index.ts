@@ -5,6 +5,7 @@ import KanbanColumnSkeleton from "./skeleton/kanban";
 import LatestActivitiesSkeleton from "./skeleton/latest-activities";
 import ProjectCardSkeleton from "./skeleton/project-card";
 import AccordionHeaderSkeleton from "./skeleton/accordion-header";
+import DashboardTotalCountCard from "./home/total-count-card";
 
 export {UpcomingEvents, DealsCaharts, UpcomingEventsSkeleton, KanbanColumnSkeleton,
-     LatestActivitiesSkeleton, ProjectCardSkeleton, AccordionHeaderSkeleton};
+     LatestActivitiesSkeleton, ProjectCardSkeleton, AccordionHeaderSkeleton, DashboardTotalCountCard};
